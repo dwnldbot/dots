@@ -1,3 +1,14 @@
+" Auto install plug if not found
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+	   \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+    augroup PLUG
+        au!
+        autocmd VimEnter * PlugInstall
+    augroup END
+endif
+
 call plug#begin('~/.local/share/nvim/plugged/')
     Plug 'tpope/vim-fugitive'
     Plug 'nerdypepper/vim-colors-plain'
@@ -73,6 +84,8 @@ let g:vimtex_compiler_latexmk = {
 
 " Set zathura as default viewer
 let g:vimtex_view_method = 'zathura'
+
+let g:vimtex_compiler_progname = 'nvr'
 
 " Enables to go to source file of packages etc.
 let vimtex_includeexpr = 1
