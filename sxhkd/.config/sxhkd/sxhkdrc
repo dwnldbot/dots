@@ -21,9 +21,13 @@ alt + g
 alt + f
 	fullscreen.sh $(pfw)
 
-# tile windows
+# tile windows with border of 20px
 alt + t
         tile.sh
+
+# tile windows without border
+alt + v
+        tile.sh 0
 
 # close window
 alt + shift + q

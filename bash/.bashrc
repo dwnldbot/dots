@@ -4,6 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+HISTSIZE=-1
 
 # System command aliases
 alias l='ls --color=auto'
@@ -19,10 +20,13 @@ alias tr='trizen'
 alias vim='nvim'
 alias vimrc='nvim ~/.dots/nvim/.config/nvim/init.vim'
 alias bc='bc -q -l'
+alias cal='cal -m --color=auto'
 alias startfb='fbterm tmux'
 alias inet='ping -c 3 8.8.8.8'
 alias sourcerc='source ~/.bashrc'
 
 # Prompt
-PS1='\[\e[1;31m\] - \[\e[1;37m\]'
+# PS1='\[\e[1;31m\] - \[\e[1;37m\]'
+PS1=" → "
+#PS1="- "
 #PS1='\[\e[1;31m\] \w \[\e[1;37m\]'

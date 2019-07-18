@@ -11,6 +11,7 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged/')
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-commentary'
     Plug 'nerdypepper/vim-colors-plain'
     Plug 'junegunn/goyo.vim'
     Plug 'rhysd/open-pdf.vim'
@@ -126,5 +127,5 @@ nnoremap <leader>wq :wq <CR>
 autocmd FileType python nnoremap <silent> <leader>e :w<CR>:!clear;python %<CR>
 autocmd FileType python nnoremap <silent> <leader>i :w<CR>:!clear;python -i %<CR>
 
-nnoremap <leader>g :Gstatus <CR>
+nnoremap <leader>s :Gstatus <CR>
 

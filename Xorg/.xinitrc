@@ -44,3 +44,9 @@ exec sxhkd
 
 # dwm
 #exec dwm
+
+# awesome
+#exec awesome
+
+# xfce
+#exec xfce4-session

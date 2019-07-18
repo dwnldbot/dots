@@ -8,11 +8,8 @@ set completion-fg "#eeffff"
 set completion-highlight-bg "#82aaff"
 set completion-highlight-fg "#eeffff"
 
-set statusbar-bg "#5ECFA4"
+set statusbar-bg "#59f176"
 set statusbar-fg "#111118"
-
-set highlight-active-color "#16A190"
-set highlight-color "#A8DBCD"
 
 set inputbar-bg "#66b0ff"
 set inputbar-fg "#111118"
