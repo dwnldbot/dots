@@ -38,7 +38,8 @@ exec redshift -l 49.006890:8.403653 -t 6500:3700 &
 # wmutils
 focus_watcher.sh &
 workspace.sh -i
-sh $HOME/.fehbg &
+# sh $HOME/.fehbg &
+feh --bg-fill ~/img/wallpaper
 st &
 exec sxhkd
 
